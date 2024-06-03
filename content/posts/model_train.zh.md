@@ -132,7 +132,7 @@ print(f'Accuracy: {100. * correct / len(test_loader.dataset)}')
 
 然而，只执行 `python myscript.py` 只会使用单个 GPU 运行脚本。如果有多个 GPU 资源可用，您将如何让这个脚本在两个 GPU 或多台机器上运行，通过分布式训练提高训练速度？这是 `torch.distributed` 发挥作用的地方。
 
-{{< figure src="/hugo-blog/img/gpu.png" attr="Fig. 1. An overview of threats to LLM-based applications. GPU" align=center target="_blank" >}}
+{{< figure src="/img/gpu.png" attr="Fig. 1. An overview of threats to LLM-based applications. GPU" align=center target="_blank" >}}
 
 # PyTorch 分布式数据并行
 
