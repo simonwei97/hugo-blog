@@ -1,0 +1,20 @@
+- id: date_name
+  translation: "Date"
+
+- id: estimated_reading_time
+  translation: "Estimated Reading Time"
+
+- id: author_name
+  translation: "Author"
+
+- id: warning
+  translation: "Warning"
+
+- id: note
+  translation: "Note"
+
+- id: info
+  translation: "Info"
+
+- id: tip
+  translation: "Tip"
