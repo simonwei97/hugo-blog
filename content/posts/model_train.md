@@ -134,7 +134,7 @@ print(f'Accuracy: {100. * correct / len(test_loader.dataset)}')
 
 <!-- {{< figure src="https://source.unsplash.com/Z0lL0okYjy0" attr="Photo by [Aditya Telange](https://unsplash.com/@adityatelange?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/Z0lL0okYjy0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)" align=center link="https://unsplash.com/photos/Z0lL0okYjy0" target="_blank" >}} -->
 
-{{< figure src="/img/gpu.png" attr="Fig. 1. An overview of threats to LLM-based applications. GPU" align=center target="_blank" >}}
+{{< figure src="./gpu.png" attr="Fig. 1. An overview of threats to LLM-based applications. GPU" align=center target="_blank" >}}
 
 # PyTorch 分布式数据并行
 
