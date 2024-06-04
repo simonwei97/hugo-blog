@@ -5,7 +5,7 @@ body {
 
 
 :root {
-    --main-width: 800px;
+    --main-width: 830px;
     --footer-height: 40px;
     /*--content-gap: 20px;*/
     /*--content: rgb(80, 80, 80);*/
@@ -25,5 +25,15 @@ body {
 }
 
 .post-content blockquote {
-    background: rgb(230, 230, 230);
+    border-left-color: #8250df;
+}
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    width: 0%;
+    height: 5px;
+    background: blue;
+    z-index: 10000;
 }

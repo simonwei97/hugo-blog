@@ -4,7 +4,7 @@ baseURL: "https://simonwei97.github.io/hugo-blog"
 title: Simon's Blog
 copyright: "© [Simon's Blog](https://simonwei97.github.io/hugo-blog)"
 paginate: 5
-theme: [PaperMod]
+theme: ["PaperMod"]
 
 enableInlineShortcodes: true
 enableEmoji: true # 允许使用 Emoji 表情，建议 true
@@ -47,6 +47,8 @@ languages:
         - name: 🧩 Tags
           url: tags/
           weight: 10
+        - name: GitHub
+          url: https://github.com/simonwei97
         - name: Back-To-HomePage
           url: https://simonwei97.github.io/
   zh:
@@ -181,7 +183,8 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ["title", "permalink", "summary"]
+    # keys: ["title", "permalink", "summary", "content"]
 
   # StartYear: 2020 # 底部开始年份
 
