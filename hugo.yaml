@@ -49,8 +49,10 @@ languages:
           weight: 10
         - name: GitHub
           url: https://github.com/simonwei97
+          weight: 15
         - name: Back-To-HomePage
           url: https://simonwei97.github.io/
+          weight: 15
   zh:
     languageName: "🇨🇳 CN"
     weight: 2
@@ -72,8 +74,12 @@ languages:
         - name: 🧩 标签
           url: tags/
           weight: 10
+        - name: GitHub
+          url: https://github.com/simonwei97
+          weight: 15
         - name: 回到主页
           url: https://simonwei97.github.io/
+          weight: 15
     params:
       homeInfoParams:
         Title: "👋 欢迎来到我的博客"

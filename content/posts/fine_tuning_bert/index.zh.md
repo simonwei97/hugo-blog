@@ -16,9 +16,9 @@ math: true
 
 # PyTorch DDP
 
-# :hugs:🤗 Accelerate
+# :hugs: Accelerate
 
-# :hugs:🤗 transformers Trainer
+# :hugs: transformers Trainer
 
 本例中使用 [transformers](https://github.com/huggingface/transformers) 库中的 **Trainer 类**, [这里](https://huggingface.co/docs/transformers/en/main_classes/trainer)有对 Trainer 的介绍。其支持在多个 GPU/TPU 上分布式训练，并且支持混合精度。
 

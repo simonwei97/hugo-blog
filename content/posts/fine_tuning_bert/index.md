@@ -17,9 +17,9 @@ math: true
 
 # PyTorch DDP
 
-# :hugs:🤗 Accelerate
+# :hugs: Accelerate
 
-# :hugs:🤗 transformers Trainer
+# :hugs: transformers Trainer
 
 This post will use [transformers](https://github.com/huggingface/transformers)  **Trainer Class**, [Here](https://huggingface.co/docs/transformers/en/main_classes/trainer) is introduaction of Trainer. 
 
