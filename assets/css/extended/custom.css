@@ -3,6 +3,42 @@ body {
     font-size: 16px;
 }
 
+/* 定义相册容器样式 */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 图片之间的间距 */
+    justify-content: center; /* 水平居中相册 */
+    padding: 10px; /* 相册容器的内边距 */
+    /* background-color: #f0f0f0; /* 背景颜色 */
+    background-color: transparent;
+}
+  
+/* 定义相册项样式 */
+.gallery-item {
+    display: block;
+    width: calc(20% - 20px); /* 每行4张图片，减去间距 */
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px; /* 图片圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 鼠标悬停效果 */
+    /* color: #ffffff; */
+    color: transparent;
+    background-color: transparent;
+}
+  
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+/* 鼠标悬停效果 */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 鼠标悬停时增加阴影 */
+}
 
 :root {
     --main-width: 830px;
@@ -36,4 +72,10 @@ body {
     height: 5px;
     background: blue;
     z-index: 10000;
+}
+
+/* Scale SVG icons to text size */
+.icon svg {
+    height:1em;
+    width:1em
 }
