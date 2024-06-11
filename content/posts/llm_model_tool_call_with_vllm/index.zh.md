@@ -32,9 +32,12 @@ pandas = "^2.2.2"
 vllm = "^0.4.2"
 ```
 
+{{< githubcard repo="vllm-project/vllm" >}}
+<br>
+
 ## 当前 vLLM 不支持 tool call
 
-因为当前 vLLM 不支持使用 OpenAI 包的方式传入 `tools`，详见 vLLM PR {{< icon "github" >}}[#3237](https://github.com/vllm-project/vllm/pull/3237)。
+因为当前 vLLM 不支持使用 OpenAI 包的方式传入 `tools`，详见 vLLM PR {{< ionicons "logo-github" >}}[#3237](https://github.com/vllm-project/vllm/pull/3237)。
 
 ```py
 from openai import OpenAI

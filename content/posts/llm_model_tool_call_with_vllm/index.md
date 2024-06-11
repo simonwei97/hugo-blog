@@ -12,7 +12,9 @@ TocOpen: true
 math: true
 ---
 
-# Python ENV dependency
+{{< githubcard repo="vllm-project/vllm" >}}
+
+## Python ENV dependency
 
 Run `pip install poetry==1.8.0` to install [Poetry](https://python-poetry.org/), which is Python packaging and dependency management tool.
 
@@ -32,7 +34,7 @@ pandas = "^2.2.2"
 vllm = "^0.4.2"
 ```
 
-## vLLM(<=0.4.2) not support tool_call
+### vLLM(<=0.4.2) not support tool_call
 
 This codes is the best way for tool_call.
 
@@ -54,10 +56,10 @@ response_message = response.choices[0].message
 tool_calls = response_message.tool_calls
 ```
 
-Due to latest vLLM does not support using tool_call with interactive with OpenAI SDK, releated PR {{< icon "github" >}}[#3237](https://github.com/vllm-project/vllm/pull/3237).
+Due to latest vLLM does not support using tool_call with OpenAI python SDK, releated PR {{< ionicons "logo-github" >}}[#3237](https://github.com/vllm-project/vllm/pull/3237).
 We will use corresponding model **Prompt**, then insert `tools` into `request.messages`. After that, we could invoke LLM chat-completions interface with OpenAI python SDK.
 
-## ChatGLM3-6B
+### ChatGLM3-6B
 
 Start LLM server with vLLM scripts, which will offers standard OpenAI API.
 

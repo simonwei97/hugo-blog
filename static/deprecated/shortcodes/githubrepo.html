@@ -1,0 +1,72 @@
+{{ $id := delimit (slice "github" (partial "functions/uid.html" .)) "-" }}
+{{- $githubURL := print "https://api.github.com/repos/" (.Get "repo") -}}
+{{- $githubData := getJSON ($githubURL) -}}
+{{- $githubColors := .Site.Data.githubColors -}}
+{{- with $githubData -}}
+
+<a id="{{ $id }}" target="_blank" href="{{ .html_url }}" class="cursor-pointer">
+  <div class="github-repo-card">
+
+    <!-- Name -->
+    <div class="item-flex-and-center">
+      <span class="github-icon" style="margin-right:10px;">
+        {{ partial "icon.html" "github" }}
+      </span>
+      <div 
+        id="{{ $id }}-full_name"
+        class="github-repo-name selection-underline">
+        {{ .full_name | markdownify }}
+      </div>
+    </div>
+    
+    <!-- Description -->
+    <p id="{{ $id }}-description" class="github-repo-description text-md">
+      {{ .description | markdownify }}
+    </p>
+    
+    <!-- Stats -->
+    <div class="github-repo-stats item-flex-and-center">
+      
+      <!-- language -->
+      <span class="github-repo-lang"
+        style="background-color: {{ if .language }} {{- index $githubColors .language -}} {{ else }} #0077b6 {{ end }}"></span>
+      <div class="github-repo-lang-name">
+        {{ if .language }} {{ .language }} {{ else }} null {{ end }}
+      </div>
+
+      <!-- stars -->
+      <span class="github-repo-start-icon text-md">
+        {{ partial "icon.html" "star" }}
+      </span>
+      <div id="{{ $id }}-stargazers" class="github-repo-star-cnt text-md">
+        {{ .stargazers_count }}
+      </div>
+
+      <!-- forks -->
+      <span class="github-repo-fork-icon text-md">
+        {{ partial "icon.html" "fork" }}
+      </span>
+      <div id="{{ $id }}-forks" class="github-repo-fork-cnt text-md">
+        {{ .forks }}
+      </div>
+
+    </div>
+    
+  </div>
+  <script>
+    fetch({{ $githubURL }}, {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('{{ $id }}-full_name').innerHTML = data.full_name;
+        document.getElementById('{{ $id }}-description').innerHTML = data.description;
+        document.getElementById('{{ $id }}-stargazers').innerHTML = data.stargazers_count;
+        document.getElementById('{{ $id }}-forks').innerHTML = data.forks;
+      })
+      .catch(error => console.error(error))
+  </script>
+</a>
+{{- end -}}

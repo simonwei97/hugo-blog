@@ -70,7 +70,7 @@ body {
     max-width: 100%;
     width: 0%;
     height: 5px;
-    background: blue;
+    background: #8250df;
     z-index: 10000;
 }
 
@@ -78,4 +78,12 @@ body {
 .icon svg {
     height:1em;
     width:1em
+}
+
+/* Github repo card style */
+.repo-card {
+    max-width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5); */
 }
