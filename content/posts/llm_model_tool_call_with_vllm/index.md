@@ -1,18 +1,18 @@
 ---
 author: ["Simon Wei"]
-title: "LLM tool call with vLLM"
+title: "LLM Funcation Calling with vLLM"
 date: "2024-06-05"
-description: "LLM tool call with vLLM"
-summary: "LLM tool call with vLLM"
-tags: ["LLLM", "vLLM", "Tool Call"]
-categories: ["LLLM", "vLLM", "Tool Call"]
+description: "LLM Funcation Calling with vLLM"
+summary: "LLM Funcation Calling with vLLM"
+tags: ["LLLM", "vLLM", "Funcation Calling"]
+categories: ["LLLM", "vLLM", "Funcation Calling"]
 series: ["LLM"]
 ShowToc: true
 TocOpen: true
 math: true
 ---
 
-{{< githubcard repo="vllm-project/vllm" >}}
+<!-- {{< githubcard repo="vllm-project/vllm" >}} -->
 
 ## Python ENV dependency
 
