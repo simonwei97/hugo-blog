@@ -2,9 +2,9 @@
 author: ["Simon Wei"]
 title: "LLM Funcation Calling with vLLM"
 date: "2024-06-05"
-description: "LLM Funcation Calling with vLLM"
-summary: "LLM Funcation Calling with vLLM"
-tags: ["LLLM", "vLLM", "Funcation Calling"]
+description: ""
+summary: ""
+tags: ["LLM", "vLLM", "Funcation Calling"]
 categories: ["LLLM", "vLLM", "Funcation Calling"]
 series: ["LLM"]
 ShowToc: true

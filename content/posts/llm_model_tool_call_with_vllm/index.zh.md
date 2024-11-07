@@ -2,9 +2,9 @@
 author: ["Simon Wei"]
 title: "使用vLLM部署LLM进行Funcation Calling"
 date: "2024-06-05"
-description: "使用vLLM部署LLM工具调用"
-summary: "LLM tool call with vLLM"
-tags: ["LLLM", "vLLM", "Tool Call"]
+description: ""
+summary: ""
+tags: ["LLM", "vLLM", "Tool Call"]
 categories: ["LLLM", "vLLM", "Tool Call"]
 series: ["LLM"]
 ShowToc: true

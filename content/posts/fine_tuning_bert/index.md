@@ -2,9 +2,9 @@
 author: ["Simon Wei"]
 title: "Fine-Tuning BERT for Text classification"
 date: "2024-04-10"
-description: "Fine-Tuning BERT for Text classification."
-summary: "Fine-Tuning BERT for Text classification."
-tags: ["LLLM", "BERT", "Fine-Tuning", "torch"]
+description: ""
+summary: ""
+tags: ["LLM", "BERT", "Fine-Tuning", "torch"]
 categories: ["LLM", "Fine-Tuning"]
 series: ["LLM"]
 ShowToc: true

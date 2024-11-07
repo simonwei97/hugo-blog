@@ -3,6 +3,11 @@ body {
     font-size: 16px;
 }
 
+/* 博客标题样式 */
+.post-title {
+    font-size: 36px;
+}
+
 /* 定义相册容器样式 */
 .gallery-container {
     display: flex;

@@ -2,9 +2,9 @@
 author: ["Simon Wei"]
 title: "Fine-Tuning BERT模型用于文本分类"
 date: "2024-04-10"
-description: "Fine-Tuning BERT模型用于文本分类."
-summary: "Fine-Tuning BERT模型用于文本分类."
-tags: ["LLLM", "BERT", "Fine-Tuning", "torch"]
+description: ""
+summary: ""
+tags: ["LLM", "BERT", "Fine-Tuning", "torch"]
 categories: ["LLM", "Fine-Tuning"]
 series: ["LLM"]
 ShowToc: true
